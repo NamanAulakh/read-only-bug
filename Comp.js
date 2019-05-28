@@ -24,8 +24,9 @@ class Comp extends Component<Props> {
   };
 
   yo = async () => {
-    const { testFunc } = this.props;
+    const { testFunc } = this.props; // error
     console.log('TCL: Comp -> yo -> testFunc', testFunc);
+    // console.log('TCL: Comp -> yo -> this.props.testFunc', this.props.testFunc); // works fine
   };
 
   yo1 = () => {
